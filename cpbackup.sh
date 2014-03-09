@@ -1,12 +1,12 @@
 #!/bin/bash
 # Script to create cPanel backups and copy to a remote server
-# For security purposes, assumes you have enabled ssh keyl based authentication between servers.
-# Written by Mark Railton - markrailton.com - bitbucket.org/railto
+# For security purposes, assumes you have enabled ssh key based authentication between servers.
+# Written by Mark Railton - markrailton.com - github.com/railto
 
 # Variables to make script easier to configure for your needs
 user="backup" # Username on remote backup host
-server="srv3.markrailton.com" # Server name of remote backup host
-path="~/backups/srv1/" # Path on remote backup host to store backup files
+server="backup.server" # Server name of remote backup host
+path="~/backup" # Path on remote backup host to store backup files
 threshold="1.00" # Load threshold above which backups will not run
 check="10" # Time in seconds between load checks when above threshold
 
